@@ -52,7 +52,7 @@ def imapsync(self, host1, host2, options={}):
     """
 
     # Start imapsync
-    command = (['imapsync', '--nolog --noreleasecheck'] +
+    command = (['imapsync', '--nolog', '--noreleasecheck'] +
                get_imapsync_host_args(1, host1) +
                get_imapsync_host_args(2, host2))
 
